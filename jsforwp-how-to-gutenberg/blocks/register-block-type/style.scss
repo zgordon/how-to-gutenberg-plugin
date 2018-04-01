@@ -1,0 +1,77 @@
+$yellow: #f7b733;
+$yellow-light: #FEF3E0;
+$yellow-lightest: rgba(254, 243, 224, 0.52);
+$yellow-dark: #ac7408;
+$font-color-dark: #222;
+$blue: #387BB2;
+
+
+.entry-content .wp-block-jsforwp-register-demo,
+.wp-block-jsforwp-register-demo {
+    background: $yellow-lightest;
+    border: 1px $yellow solid;
+    color: $font-color-dark;
+    padding: 1rem 1rem 0;
+    position: relative;
+    margin: 2rem auto 0;
+    max-width: 720px;
+}
+
+.wp-block-jsforwp-register-demo::before {
+    content: '';
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    bottom: 2px;
+    opacity: 1;
+    right: 0;
+    background-image: url('../images/js-wapuu.svg');
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position-x: 20px;
+    color: $yellow-light;
+    transition: all .2s ease-in-out;
+}
+
+.wp-block-jsforwp-register-demo::before {
+    background: none;
+    content: none;
+}
+
+.wp-block-jsforwp-register-demo:hover::before,
+.is-selected .wp-block-jsforwp-register-demo::before {
+    background-position-x: 44px;
+}
+
+.wp-block-jsforwp-register-demo::after {
+    font-size: .8rem;
+    position: absolute;
+    padding: 2px 2px 0 4px;
+    bottom: 0;
+    right: 0;
+    background: $blue;
+    color: $yellow-light;
+    z-index: 100;
+    transition: width .6s ease-in-out;
+    text-align: right;
+}
+
+.wp-block-jsforwp-register-demo pre {
+    background-color: #222;
+    border-top: 1px $yellow dashed;
+    color: #ccc;
+    padding: 1rem;
+    border: 1px black solid;
+    //width: calc(100% + 2rem);
+    //margin: 0 -1rem -1px;
+    margin: 1rem 0;
+    overflow: auto;
+}
+
+.wp-block-jsforwp-register-demo pre strong em {
+    color: white;
+}
+
+.wp-block-jsforwp-register-demo pre strong {
+    color: lime;
+}
