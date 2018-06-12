@@ -8,7 +8,8 @@ import './style.scss';
  * Internal block libraries
  */
 const { __ } = wp.i18n;
-const { registerBlockType, RichText } = wp.blocks;
+const { registerBlockType } = wp.blocks;
+const { RichText } = wp.editor;
 
 /**
  * Register block
@@ -19,7 +20,10 @@ export default registerBlockType(
         title: __( 'Demo Block', 'jsforwphowto' ),
         description: __( 'How to use the RichText component for building your own editable blocks.', 'jsforwphowto' ),
         category: 'common',
-        icon: icon,
+        icon: {
+            background: '#0073AA',
+            src: icon
+        },
         keywords: [
             __( 'How to', 'jsforwphowto' ),
             __( 'Example', 'jsforwphowto' ),

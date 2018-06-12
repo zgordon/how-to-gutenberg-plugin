@@ -19,7 +19,10 @@ import {
 const { Fragment } = wp.element;
 
 // Get components from from wp.blocks
-const { registerBlockType, InspectorControls } = wp.blocks;
+const { registerBlockType } = wp.blocks;
+
+// Get components from from wp.editor
+const { InspectorControls } = wp.editor;
 
 // Get components from Components
 const { PanelBody, RadioControl } = wp.components;
@@ -39,13 +42,17 @@ export default registerBlockType(
     'jsforwp/register-demo',
     {
         // Localize title using wp.i18n.__()
-        title: __( 'registerBlockType Explained', 'jsforwphowto' ),
+        title: __( 'registerBlockType', 'jsforwphowto' ),
         // Add a description for the block
         description: __( 'A demonstration block for learning how to register your own blocks with registerBlockType()', 'jsforwphowto' ),
         // Category Options: common, formatting, layout, widgets, embed
         category: 'common',
         // Dashicons Options - https://goo.gl/aTM1DQ
-        icon: 'wordpress-alt',
+        // Customize background color
+        icon: {
+          background: '#0073AA',
+          src: 'wordpress-alt'
+        },                
         // Limit to 3 Keywords / Phrases
         keywords: [
             __( 'How to', 'jsforwphowto' ),

@@ -1,4 +1,4 @@
-const icon = <svg width='20px' height='20px' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
+const icon = <svg width='20px' height='20px' viewBox='0 0 100 100' color='white' xmlns='http://www.w3.org/2000/svg'>
     <path d='m46.242 82.672c-0.019532-0.10547-0.019532-0.20703-0.019532-0.3125v-0.35938c0 0.22656 0.011719 0.44531 0.019532 0.67188z'
     />
     <path d='m53.777 82v0.35938c0 0.10547 0 0.20703-0.019532 0.3125 0.007813-0.22656 0.019532-0.44531 0.019532-0.67188z'

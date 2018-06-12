@@ -1,13 +1,1 @@
-.wp-block-jsforwp-register-demo .my-content {
-  border: 1px transparent solid;
-  padding: 4px 8px;
-  margin: -4px -8px; }
-
-.wp-block-jsforwp-register-demo .is-selected .my-content,
-.wp-block-jsforwp-register-demo .my-content:focus {
-  border: 1px #f7b733 dashed;
-  background: rgba(255, 255, 255, 0.8); }
-
-.wp-block-jsforwp-register-demo .is-selected .my-content:hover,
-.wp-block-jsforwp-register-demo .my-content:focus {
-  border: 1px #f7b733 solid; }
+.wp-block-jsforwp-register-demo .my-content{border:1px transparent solid;padding:4px 8px;margin:-4px -8px}.wp-block-jsforwp-register-demo .is-selected .my-content,.wp-block-jsforwp-register-demo .my-content:focus{border:1px #f7b733 dashed;background:rgba(255,255,255,0.8)}.wp-block-jsforwp-register-demo .is-selected .my-content:hover,.wp-block-jsforwp-register-demo .my-content:focus{border:1px #f7b733 solid}
