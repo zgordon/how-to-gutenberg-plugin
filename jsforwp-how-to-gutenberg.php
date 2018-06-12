@@ -17,6 +17,11 @@
 //  Exit if accessed directly.
 defined('ABSPATH') || exit;
 
+// Only load if Gutenberg is available.
+if ( ! function_exists( 'register_block_type' ) ) {
+	return;
+}
+
 
 function jsforwphowto_templates( $args, $post_type ) {
 
@@ -127,6 +132,7 @@ function jsforwp_dynamic_block_render( $attributes ) {
 }
 
 // Hook server side rendering into render callback
+
 register_block_type( 'jsforwp/dynamic', [
     'render_callback' => 'jsforwp_dynamic_block_render',
 ] );
