@@ -60,7 +60,7 @@ function jsforwphowto_editor_scripts()
     wp_enqueue_script(
         'jsforwp-blocks-js',
         plugins_url( $blockPath, __FILE__ ),
-        [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api' ],
+        [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api', 'wp-editor' ],
         filemtime( plugin_dir_path(__FILE__) . $blockPath )
     );
 
