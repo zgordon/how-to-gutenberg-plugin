@@ -58,7 +58,7 @@ function jsforwphowto_editor_scripts()
 
     // Enqueue the bundled block JS file
     wp_enqueue_script(
-        'jsforwp-blocks-js',
+        'jsforwphowto-blocks-js',
         plugins_url( $blockPath, __FILE__ ),
         [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api', 'wp-editor' ],
         filemtime( plugin_dir_path(__FILE__) . $blockPath )
@@ -66,7 +66,7 @@ function jsforwphowto_editor_scripts()
 
     // Enqueue optional editor only styles
     wp_enqueue_style(
-        'jsforwp-blocks-editor-css',
+        'jsforwphowto-blocks-editor-css',
         plugins_url( $editorStylePath, __FILE__),
         [ 'wp-blocks' ],
         filemtime( plugin_dir_path( __FILE__ ) . $editorStylePath )
@@ -89,7 +89,7 @@ function jsforwphowto_scripts()
 
     // Enqueue the bundled block JS file
     wp_enqueue_script(
-        'jsforwp-blocks-frontend-js',
+        'jsforwphowto-blocks-frontend-js',
         plugins_url( $blockPath, __FILE__ ),
         [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api' ],
         filemtime( plugin_dir_path(__FILE__) . $blockPath )
@@ -97,7 +97,7 @@ function jsforwphowto_scripts()
 
     // Enqueue frontend and editor block styles
     wp_enqueue_style(
-        'jsforwp-blocks-css',
+        'jsforwphowto-blocks-css',
         plugins_url($stylePath, __FILE__),
         [ 'wp-blocks' ],
         filemtime(plugin_dir_path(__FILE__) . $stylePath )
