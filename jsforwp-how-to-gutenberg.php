@@ -58,7 +58,7 @@ function jsforwphowto_editor_scripts()
 
     // Enqueue the bundled block JS file
     wp_enqueue_script(
-        'jsforwp-blocks-js',
+        'jsforwphowto-blocks-js',
         plugins_url( $blockPath, __FILE__ ),
         [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api' ],
         filemtime( plugin_dir_path(__FILE__) . $blockPath )
@@ -66,7 +66,7 @@ function jsforwphowto_editor_scripts()
 
     // Enqueue optional editor only styles
     wp_enqueue_style(
-        'jsforwp-blocks-editor-css',
+        'jsforwphowto-blocks-editor-css',
         plugins_url( $editorStylePath, __FILE__),
         [ 'wp-blocks' ],
         filemtime( plugin_dir_path( __FILE__ ) . $editorStylePath )
@@ -89,7 +89,7 @@ function jsforwphowto_scripts()
 
     // Enqueue the bundled block JS file
     wp_enqueue_script(
-        'jsforwp-blocks-frontend-js',
+        'jsforwphowto-blocks-frontend-js',
         plugins_url( $blockPath, __FILE__ ),
         [ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api' ],
         filemtime( plugin_dir_path(__FILE__) . $blockPath )
@@ -97,7 +97,7 @@ function jsforwphowto_scripts()
 
     // Enqueue frontend and editor block styles
     wp_enqueue_style(
-        'jsforwp-blocks-css',
+        'jsforwphowto-blocks-css',
         plugins_url($stylePath, __FILE__),
         [ 'wp-blocks' ],
         filemtime(plugin_dir_path(__FILE__) . $stylePath )
@@ -112,7 +112,7 @@ add_action('enqueue_block_assets', 'jsforwphowto_scripts');
 /**
  * Server rendering for /blocks/examples/12-dynamic
  */
-function jsforwp_dynamic_block_render( $attributes ) {
+function jsforwphowto_dynamic_block_render( $attributes ) {
 
     $recent_posts = wp_get_recent_posts( [
         'numberposts' => 1,
@@ -133,15 +133,15 @@ function jsforwp_dynamic_block_render( $attributes ) {
 
 // Hook server side rendering into render callback
 
-register_block_type( 'jsforwp/dynamic', [
-    'render_callback' => 'jsforwp_dynamic_block_render',
+register_block_type( 'jsforwphowto/dynamic', [
+    'render_callback' => 'jsforwphowto_dynamic_block_render',
 ] );
 
 
 /**
  * Registering meta fields for block attributes that use meta storage
  */
-function jsforwp_register_meta() {
+function jsforwphowto_register_meta() {
     $args = array(
         'type' => 'string',
         'single' => true,
