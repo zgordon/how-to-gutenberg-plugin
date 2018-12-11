@@ -99,7 +99,7 @@ function jsforwphowto_scripts()
     wp_enqueue_style(
         'jsforwphowto-blocks-css',
         plugins_url($stylePath, __FILE__),
-        [ 'wp-blocks' ],
+        null,
         filemtime(plugin_dir_path(__FILE__) . $stylePath )
     );
 
