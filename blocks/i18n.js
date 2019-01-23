@@ -1,1 +1,1 @@
-wp.i18n.setLocaleData( { '': {} }, 'jsforwphowto' );
+wp.i18n.setLocaleData({ "": {} }, "jsforwphowto");
