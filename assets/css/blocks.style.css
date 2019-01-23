@@ -1,3 +1,16 @@
+.entry-content .wp-block-jsforwphowto-demo,
+.wp-block-jsforwphowto-demo {
+  background: rgba(254, 243, 224, 0.52);
+  border: 5px #f7b733 solid;
+  padding: 1rem; }
+  .entry-content .wp-block-jsforwphowto-demo h2,
+  .wp-block-jsforwphowto-demo h2 {
+    color: #222;
+    font-size: 2rem;
+    margin: 1rem 0; }
+  .entry-content .wp-block-jsforwphowto-demo p,
+  .wp-block-jsforwphowto-demo p {
+    font-size: 1.4rem; }
 .entry-content .wp-block-jsforwp-register-demo,
 .wp-block-jsforwp-register-demo {
   background: rgba(254, 243, 224, 0.52);
@@ -57,16 +70,3 @@
 
 .wp-block-jsforwp-register-demo pre strong {
   color: lime; }
-.entry-content .wp-block-jsforwphowto-demo,
-.wp-block-jsforwphowto-demo {
-  background: rgba(254, 243, 224, 0.52);
-  border: 5px #f7b733 solid;
-  padding: 1rem; }
-  .entry-content .wp-block-jsforwphowto-demo h2,
-  .wp-block-jsforwphowto-demo h2 {
-    color: #222;
-    font-size: 2rem;
-    margin: 1rem 0; }
-  .entry-content .wp-block-jsforwphowto-demo p,
-  .wp-block-jsforwphowto-demo p {
-    font-size: 1.4rem; }
