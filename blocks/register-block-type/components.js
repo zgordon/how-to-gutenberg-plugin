@@ -1,4 +1,4 @@
-const { Fragment, createElement } = wp.element;
+const { Fragment } = wp.element;
 import settings from "./code-snippets.js";
 
 export function TitleDescription() {

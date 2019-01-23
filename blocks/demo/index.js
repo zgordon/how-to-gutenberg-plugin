@@ -9,7 +9,6 @@ import "./editor.scss";
  * Internal block libraries
  */
 const { __ } = wp.i18n;
-const { createElement } = wp.element;
 const { registerBlockType } = wp.blocks;
 const { RichText } = wp.editor;
 

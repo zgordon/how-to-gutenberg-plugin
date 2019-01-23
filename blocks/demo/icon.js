@@ -1,5 +1,3 @@
-const { createElement } = wp.element;
-
 const icon = (
   <svg
     width="20px"

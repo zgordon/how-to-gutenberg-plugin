@@ -1,5 +1,3 @@
-const { createElement } = wp.element;
-
 /**
  * Import internationalization
  */

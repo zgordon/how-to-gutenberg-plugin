@@ -16,7 +16,7 @@ import {
 } from "./components";
 
 // Get React Fragment
-const { Fragment, createElement } = wp.element;
+const { Fragment } = wp.element;
 
 // Get components from from wp.blocks
 const { registerBlockType } = wp.blocks;

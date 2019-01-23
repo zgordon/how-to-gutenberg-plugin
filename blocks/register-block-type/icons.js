@@ -1,4 +1,3 @@
-const { createElement } = wp.element;
 const blockIcons = {};
 
 blockIcons.js = (

@@ -46,7 +46,16 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
+          options: {
+            presets: ["@wordpress/default"],
+            plugins: [
+              [
+                "@babel/transform-react-jsx",
+                { pragma: "wp.element.createElement" }
+              ]
+            ]
+          }
         }
       },
       {
