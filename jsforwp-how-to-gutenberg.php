@@ -68,7 +68,7 @@ function jsforwphowto_editor_scripts()
     wp_enqueue_style(
         'jsforwphowto-blocks-editor-css',
         plugins_url( $editorStylePath, __FILE__),
-        [ 'wp-blocks' ],
+        [],
         filemtime( plugin_dir_path( __FILE__ ) . $editorStylePath )
     );
 

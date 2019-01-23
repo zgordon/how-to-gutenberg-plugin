@@ -1,2 +1,72 @@
-.entry-content .wp-block-jsforwp-register-demo,.wp-block-jsforwp-register-demo{background:rgba(254,243,224,0.52);border:1px #f7b733 solid;color:#222;padding:1rem 1rem 0;position:relative;margin:2rem auto 0;max-width:720px}.wp-block-jsforwp-register-demo::before{content:'';position:absolute;height:110px;width:110px;bottom:2px;opacity:1;right:0;background-image:url("../images/js-wapuu.svg");background-repeat:no-repeat;background-size:130px;background-position-x:20px;color:#FEF3E0;transition:all .2s ease-in-out}.wp-block-jsforwp-register-demo::before{background:none;content:none}.wp-block-jsforwp-register-demo:hover::before,.is-selected .wp-block-jsforwp-register-demo::before{background-position-x:44px}.wp-block-jsforwp-register-demo::after{font-size:.8rem;position:absolute;padding:2px 2px 0 4px;bottom:0;right:0;background:#387BB2;color:#FEF3E0;z-index:100;transition:width .6s ease-in-out;text-align:right}.wp-block-jsforwp-register-demo pre{background-color:#222;border-top:1px #f7b733 dashed;color:#ccc;padding:1rem;border:1px black solid;margin:1rem 0;overflow:auto}.wp-block-jsforwp-register-demo pre strong em{color:white}.wp-block-jsforwp-register-demo pre strong{color:lime}
-.entry-content .wp-block-jsforwp-richtext,.wp-block-jsforwp-richtext{background:rgba(254,243,224,0.52);border:5px #f7b733 solid;padding:1rem}.entry-content .wp-block-jsforwp-richtext h2,.wp-block-jsforwp-richtext h2{color:#222;font-size:2rem;margin:1rem 0}.entry-content .wp-block-jsforwp-richtext p,.wp-block-jsforwp-richtext p{font-size:1.4rem}
+.entry-content .wp-block-jsforwp-register-demo,
+.wp-block-jsforwp-register-demo {
+  background: rgba(254, 243, 224, 0.52);
+  border: 1px #f7b733 solid;
+  color: #222;
+  padding: 1rem 1rem 0;
+  position: relative;
+  margin: 2rem auto 0;
+  max-width: 720px; }
+
+.wp-block-jsforwp-register-demo::before {
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  bottom: 2px;
+  opacity: 1;
+  right: 0;
+  background-image: url("../images/js-wapuu.svg");
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position-x: 20px;
+  color: #FEF3E0;
+  transition: all .2s ease-in-out; }
+
+.wp-block-jsforwp-register-demo::before {
+  background: none;
+  content: none; }
+
+.wp-block-jsforwp-register-demo:hover::before,
+.is-selected .wp-block-jsforwp-register-demo::before {
+  background-position-x: 44px; }
+
+.wp-block-jsforwp-register-demo::after {
+  font-size: .8rem;
+  position: absolute;
+  padding: 2px 2px 0 4px;
+  bottom: 0;
+  right: 0;
+  background: #387BB2;
+  color: #FEF3E0;
+  z-index: 100;
+  transition: width .6s ease-in-out;
+  text-align: right; }
+
+.wp-block-jsforwp-register-demo pre {
+  background-color: #222;
+  border-top: 1px #f7b733 dashed;
+  color: #ccc;
+  padding: 1rem;
+  border: 1px black solid;
+  margin: 1rem 0;
+  overflow: auto; }
+
+.wp-block-jsforwp-register-demo pre strong em {
+  color: white; }
+
+.wp-block-jsforwp-register-demo pre strong {
+  color: lime; }
+.entry-content .wp-block-jsforwp-richtext,
+.wp-block-jsforwp-richtext {
+  background: rgba(254, 243, 224, 0.52);
+  border: 5px #f7b733 solid;
+  padding: 1rem; }
+  .entry-content .wp-block-jsforwp-richtext h2,
+  .wp-block-jsforwp-richtext h2 {
+    color: #222;
+    font-size: 2rem;
+    margin: 1rem 0; }
+  .entry-content .wp-block-jsforwp-richtext p,
+  .wp-block-jsforwp-richtext p {
+    font-size: 1.4rem; }
